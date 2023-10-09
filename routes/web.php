@@ -38,6 +38,9 @@ Route::middleware('auth')->group(function () {
             Route::get('/data', 'dataAjax')->name('data');
             Route::get('/add', 'add')->name('add');
             Route::post('/create', 'create')->name('create');
+            Route::get('export', 'export')->name('export');
+            Route::get('/edit/{model}', 'edit')->name('edit');
+            Route::put('/update/{model}', 'update')->name('update');
             Route::delete('/destroy/{model}', 'destroy')->name('destroy');
         });
 

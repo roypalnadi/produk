@@ -22,12 +22,12 @@
         </div>
     </div>
     <div class="col-6 d-flex justify-content-end">
-        {{-- <button type="button" class="btn btn-success btn-sm me-4">
+        <a href="{{ route('produk.export') }}" type="button" class="btn btn-success btn-sm me-4">
             <img src="{{ asset('assets/MicrosoftExcelLogo.png') }}"alt="">
             <span class="btn-label">
                 Export Excel
             </span>
-        </button> --}}
+        </a>
         <a href="{{ route('produk.add') }}" type="button" class="btn btn-danger btn-sm">
             <img src="{{ asset('assets/PlusCircle.png') }}"alt="">
             <span class="btn-label">

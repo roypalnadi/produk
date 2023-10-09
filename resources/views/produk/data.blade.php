@@ -23,9 +23,9 @@
                     <td>{{$item->harga_jual}}</td>
                     <td>{{$item->stok}}</td>
                     <td>
-                        {{-- <button id="edit" type="submit" class="btn btn-sm show_confirm ps-0 pb-0 pt-0" data-value="{{ $item->id }}" data-toggle="tooltip" title='Edit'>
+                        <a href="{{ route('produk.edit', ['model' => $item->id]) }}" id="edit" type="submit" class="btn btn-sm show_confirm ps-0 pb-0 pt-0" data-toggle="tooltip" title='Edit'>
                             <img src="{{ asset('assets/edit.png') }}"alt="">
-                        </button> --}}
+                        </a>
                         <button id="delete" type="submit" class="btn btn-sm show_confirm ps-0 pb-0 pt-0" data-value="{{ $item->id }}" data-toggle="tooltip" title='Delete'>
                             <img src="{{ asset('assets/delete.png') }}"alt="">
                         </button>
